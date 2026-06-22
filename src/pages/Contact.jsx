@@ -41,8 +41,9 @@ function ContactGrid() {
                 <div className={styles.infoCardIcon}><Icon name="Phone" size={20}/></div>
                 <div>
                   <div className={styles.infoCardLabel}>Phone</div>
-                  <a href={`tel:${COMPANY.phone.replace(/\s/g,'')}`} className={styles.infoCardValue}>{COMPANY.phone}</a>
-                  <p className={styles.infoCardNote}>Mon – Sat, 9:30 AM – 6:30 PM IST</p>
+                  <a href={`tel:${COMPANY.phone.replace(/[^0-9+]/g,'')}`} className={styles.infoCardValue} style={{ display: 'block' }}>Ph: {COMPANY.phone}</a>
+                  <a href={`tel:${COMPANY.mobile.replace(/[^0-9+]/g,'')}`} className={styles.infoCardValue} style={{ display: 'block', marginTop: '2px' }}>Mob: {COMPANY.mobile}</a>
+                  <p className={styles.infoCardNote} style={{ marginTop: '4px' }}>Mon – Sat, 9:30 AM – 6:30 PM IST</p>
                 </div>
               </div>
 
@@ -228,15 +229,15 @@ function MapSection() {
               <div>
                 <div className={styles.mapCardTitle}>Chiranjiv Capital Services Limited</div>
                 <div className={styles.mapCardAddr}>
-                  302, Navrang House, Bhawani Singh Road,<br/>
-                  C-Scheme, Jaipur, Rajasthan – 302 001
+                  {COMPANY.address.line1}, {COMPANY.address.line2},<br/>
+                  {COMPANY.address.city} – {COMPANY.address.pin}
                 </div>
               </div>
             </div>
           </div>
           <iframe
             title="Office Location"
-            src="https://maps.google.com/maps?q=Bhawani+Singh+Road+C-Scheme+Jaipur+Rajasthan&output=embed&z=15"
+            src={`${COMPANY.mapEmbed}&z=15`}
             className={styles.mapFrame}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -253,7 +254,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contact Us"
-        description="Contact Chiranjiv Capital Services Limited in Jaipur. Book a consultation for IPO advisory, M&A due diligence, capital market services, or compliance management."
+        description="Contact Chiranjiv Capital Services Limited in Connaught Place, New Delhi. Book a consultation for IPO advisory, M&A due diligence, capital market services, or compliance management."
         canonical="/contact"
         schema={localBusinessSchema}
       />

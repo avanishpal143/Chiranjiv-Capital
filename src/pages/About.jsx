@@ -18,8 +18,8 @@ function PageHero() {
             <span className={styles.heroGold}>Expertise & Trust</span>
           </h1>
           <p className={styles.heroDesc}>
-            Chiranjiv Capital Services Limited is a Merchant Banker headquartered in Jaipur,
-            Rajasthan, dedicated to helping businesses raise capital and navigate India's capital
+            Chiranjiv Capital Services Limited is a Merchant Banker headquartered in Connaught Place,
+            New Delhi, dedicated to helping businesses raise capital and navigate India's capital
             markets with confidence since 2019.
           </p>
         </AnimatedSection>
@@ -40,20 +40,19 @@ function CompanyStory() {
             <p style={{color:'var(--text-body)',lineHeight:1.75,marginBottom:'1rem'}}>
               Chiranjiv Capital was founded in 2019 with a singular vision: to create a merchant
               banking firm that combines institutional-grade expertise with the personal attention
-              of a boutique advisory practice. Headquartered in Jaipur, we serve clients across
-              India from our base in the heart of Rajasthan's commercial capital.
+              of a boutique advisory practice. Headquartered in Connaught Place, New Delhi, we serve clients
+              across India from our base in the heart of the national capital.
             </p>
             <p style={{color:'var(--text-body)',lineHeight:1.75,marginBottom:'1rem'}}>
-              Our founders identified a clear gap in the market — growing businesses in Tier-2 and
-              Tier-3 cities lacked access to high-quality capital market advisory services that
-              larger metropolitan firms typically reserved for blue-chip clients. Chiranjiv Capital
-              was built to bridge that gap.
+              We provide expert services in IPO fund raising, M&A due diligence, capital market services,
+              project & financial structuring, transaction advisory, and compliance & regulatory advisory.
+              Our experienced team of CAs, CSs, and advocates brings deep domain knowledge to deliver
+              seamless, high-value solutions.
             </p>
             <p style={{color:'var(--text-body)',lineHeight:1.75,marginBottom:'1rem'}}>
-              Today, we have successfully managed over 50 IPO mandates, advised on transactions
-              worth thousands of crores, and serve 200+ listed companies with ongoing compliance
-              and advisory support. Our registration under the Merchant Bankers Regulations,
-              1992 underpins every service we offer.
+              With a proven track record, we guide clients through complex transactions, ensuring
+              regulatory compliance and sustainable growth in India’s competitive landscape for success.
+              Our registration under the Merchant Bankers Regulations, 1992 underpins every service we offer.
             </p>
             <div className={styles.storyBadges}>
               <div className={styles.storyBadge}>
@@ -213,7 +212,7 @@ export default function About() {
     <>
       <SEO
         title="About Us"
-        description="Learn about Chiranjiv Capital Services Limited — a Merchant Banker in Jaipur, Rajasthan. Our story, mission, values, and leadership team."
+        description="Learn about Chiranjiv Capital Services Limited — a Merchant Banker in Connaught Place, New Delhi. Our story, mission, values, and leadership team."
         canonical="/about"
         schema={orgSchema}
       />

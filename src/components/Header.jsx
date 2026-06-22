@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import Logo from './Logo';
 import { Menu, X, ChevronDown } from './Icons';
+import { COMPANY } from '../data/content';
 import styles from './Header.module.css';
 
 const NAV_LINKS = [
@@ -151,9 +152,9 @@ export default function Header() {
                   Book Consultation
                 </Link>
                 <div className={styles.mobileContact}>
-                  <a href="tel:+919829012345">+91 98290 12345</a>
+                  <a href={`tel:${COMPANY.phone.replace(/[^0-9+]/g, '')}`}>{COMPANY.phone}</a>
                   <span>·</span>
-                  <a href="mailto:info@chiranjivcapital.com">info@chiranjivcapital.com</a>
+                  <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
                 </div>
               </div>
             </motion.div>

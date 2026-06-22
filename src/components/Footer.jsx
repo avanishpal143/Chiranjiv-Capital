@@ -47,7 +47,7 @@ export default function Footer() {
               Schedule Consultation
               <ArrowRight size={16} />
             </Link>
-            <a href={`tel:${COMPANY.phone.replace(/\s/g, '')}`} className="btn btn-outline-white btn-lg">
+            <a href={`tel:${COMPANY.phone.replace(/[^0-9+]/g, '')}`} className="btn btn-outline-white btn-lg">
               Call Us Now
             </a>
           </div>
@@ -71,9 +71,13 @@ export default function Footer() {
                 Reg. No. {COMPANY.sebiReg}
               </div>
               <div className={styles.contactList}>
-                <a href={`tel:${COMPANY.phone.replace(/\s/g, '')}`} className={styles.contactItem}>
+                <a href={`tel:${COMPANY.phone.replace(/[^0-9+]/g, '')}`} className={styles.contactItem}>
                   <Phone size={14} />
-                  {COMPANY.phone}
+                  Ph: {COMPANY.phone}
+                </a>
+                <a href={`tel:${COMPANY.mobile.replace(/[^0-9+]/g, '')}`} className={styles.contactItem}>
+                  <Phone size={14} />
+                  Mob: {COMPANY.mobile}
                 </a>
                 <a href={`mailto:${COMPANY.email}`} className={styles.contactItem}>
                   <Mail size={14} />

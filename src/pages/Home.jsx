@@ -176,15 +176,15 @@ function AboutSection() {
             </h2>
             <div className={styles.dividerLine} />
             <p className={styles.aboutText}>
-              Chiranjiv Capital Services Limited is a Merchant Banker headquartered in Jaipur,
-              Rajasthan. Founded with the vision of democratizing access to India's capital
-              markets, we have grown into one of the region's most trusted names in financial advisory.
+              Chiranjiv Capital Services Limited is a Merchant Banker headquartered in Connaught Place, New Delhi.
+              We provide expert services in IPO fund raising, M&A due diligence, capital market services,
+              project & financial structuring, transaction advisory, and compliance & regulatory advisory.
             </p>
             <p className={styles.aboutText}>
-              Our team of seasoned professionals combines deep regulatory knowledge with hands-on
-              transaction experience across IPOs, M&A, structured finance, and compliance management.
-              We serve promoters, listed companies, and institutional clients who demand execution
-              excellence and uncompromising integrity.
+              Our experienced team of CAs, CSs, and advocates brings deep domain knowledge to deliver
+              seamless, high-value solutions. With a proven track record, we guide clients through
+              complex transactions, ensuring regulatory compliance and sustainable growth in India’s
+              competitive landscape for success.
             </p>
             <div className={styles.aboutHighlights}>
               {[
@@ -230,8 +230,8 @@ function AboutSection() {
                   <rect x="220" y="336" width="168" height="64" rx="10" fill="#F3F7FC"/>
                   <text x="240" y="360" fill="#6B7280" fontSize="9" fontWeight="600">CAPITAL RAISED</text>
                   <text x="240" y="382" fill="#112E63" fontSize="18" fontWeight="800">₹5,200Cr</text>
-                  <rect x="32" y="420" width="80" height="28" rx="6" fill="#F3F7FC"/>
-                  <text x="72" y="437" textAnchor="middle" fill="#6B7280" fontSize="9" fontWeight="500">Jaipur HQ</text>
+                  <rect x="32" y="420" width="88" height="28" rx="6" fill="#F3F7FC"/>
+                  <text x="76" y="437" textAnchor="middle" fill="#6B7280" fontSize="9" fontWeight="500">New Delhi HQ</text>
                   <rect x="124" y="420" width="96" height="28" rx="6" fill="rgba(8,179,156,0.1)"/>
                   <text x="172" y="437" textAnchor="middle" fill="#08B39C" fontSize="9" fontWeight="600">Registered</text>
                   <rect x="232" y="420" width="80" height="28" rx="6" fill="rgba(207,168,79,0.1)"/>
@@ -533,7 +533,7 @@ export default function Home() {
   return (
     <>
       <SEO
-        description="Chiranjiv Capital Services Limited — Merchant Banker in Jaipur. Expert IPO advisory, M&A due diligence, capital market services, transaction advisory and compliance management."
+        description="Chiranjiv Capital Services Limited — Merchant Banker in New Delhi. Expert IPO advisory, M&A due diligence, capital market services, transaction advisory and compliance management."
         canonical="/"
         schema={orgSchema}
       />

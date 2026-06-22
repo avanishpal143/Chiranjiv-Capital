@@ -15,7 +15,7 @@ function PageHero() {
           <span className="eyebrow eyebrow-white">The Team</span>
           <h1 className={styles.heroTitle}>A Team That<br/><span className={styles.heroGold}>Delivers Results</span></h1>
           <p className={styles.heroDesc}>
-            Our team brings a combined 75+ years of capital markets experience.
+            Our team brings a combined 90+ years of capital markets experience.
             Senior professionals who have personally managed hundreds of transactions
             across India's most demanding market environments.
           </p>
@@ -137,7 +137,7 @@ export default function Leadership() {
     <>
       <SEO
         title="Leadership"
-        description="Meet the team at Chiranjiv Capital Services Limited. Seasoned capital markets professionals with 75+ combined years of experience."
+        description="Meet the team at Chiranjiv Capital Services Limited. Seasoned capital markets professionals with 90+ combined years of experience."
         canonical="/leadership"
       />
       <PageHero/>

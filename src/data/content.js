@@ -10,19 +10,20 @@ export const COMPANY = {
     'A premier capital markets advisory and financial services firm dedicated to helping businesses raise capital, execute transactions, maintain compliance, and unlock long-term growth opportunities.',
   cin: 'U67190RJ2019PLC066789',
   sebiReg: 'INM000012877',
-  phone: '+91 98290 12345',
-  email: 'info@chiranjivcapital.com',
+  phone: '011-45147095',
+  mobile: '+91 99106 13098',
+  email: 'chiranjivcapital@gmail.com',
   website: 'www.chiranjivcapital.com',
   address: {
-    line1: '302, Navrang House',
-    line2: 'Bhawani Singh Road, C-Scheme',
-    city: 'Jaipur',
-    state: 'Rajasthan',
-    pin: '302 001',
+    line1: '#401, Surya Kiran Building',
+    line2: 'KG Marg, Connaught Place',
+    city: 'New Delhi',
+    state: 'Delhi',
+    pin: '110001',
     country: 'India',
   },
   mapEmbed:
-    'https://maps.google.com/maps?q=Bhawani+Singh+Road+Jaipur&output=embed',
+    'https://maps.google.com/maps?q=Surya+Kiran+Building+KG+Marg+Connaught+Place+New+Delhi&output=embed',
   established: '2019',
   registeredUnder: 'Merchant Bankers Regulations, 1992',
 };
@@ -39,7 +40,7 @@ export const SERVICES = [
     id: 'ipo-fundraising',
     title: 'IPO & Fund Raising',
     shortDesc:
-      'End-to-end management of Initial Public Offerings, Rights Issues, and private fundraising mandates for growing businesses.',
+      'We help businesses raise capital through IPOs and other fund-raising avenues, guiding them from readiness and regulatory compliances to successful listing.',
     icon: 'TrendingUp',
     color: '#08B39C',
     overview:
@@ -65,7 +66,7 @@ export const SERVICES = [
     id: 'ma-due-diligence',
     title: 'M&A Due Diligence',
     shortDesc:
-      'Rigorous financial, legal, and operational due diligence for mergers, acquisitions, and strategic transactions.',
+      'We offer expert M&A advisory and comprehensive due diligence services, streamlining mergers, acquisitions, divestitures, and joint ventures from strategy to closure.',
     icon: 'Search',
     color: '#2848B8',
     overview:
@@ -91,7 +92,7 @@ export const SERVICES = [
     id: 'capital-market-services',
     title: 'Capital Market Services',
     shortDesc:
-      'Comprehensive capital market solutions including debt issuance, equity advisory, and securities structuring for listed companies.',
+      'We provide end-to-end Capital Market Services, including equity/debt issuances, listings, regulatory compliance, and advisory for seamless capital raising and investor engagement.',
     icon: 'BarChart2',
     color: '#112E63',
     overview:
@@ -117,7 +118,7 @@ export const SERVICES = [
     id: 'project-financial-structuring',
     title: 'Project & Financial Structuring',
     shortDesc:
-      'Bespoke financial structuring solutions for large infrastructure, real estate, and corporate projects requiring complex capital stacks.',
+      'Involves expert advisory on project feasibility, funding arrangements, capital raising, and financial modeling to optimize business growth and compliance.',
     icon: 'Layers',
     color: '#CFA84F',
     overview:
@@ -137,13 +138,13 @@ export const SERVICES = [
       { step: '04', title: 'Financial Close', desc: 'Execute term sheets, definitive agreements, and drawdown.' },
     ],
     impact:
-      'Our structured finance mandates have unlocked critical infrastructure and commercial projects across Rajasthan and beyond.',
+      'Our structured finance mandates have unlocked critical infrastructure and commercial projects across the country and beyond.',
   },
   {
     id: 'transaction-advisory',
     title: 'Transaction Advisory',
     shortDesc:
-      'Strategic advisory for buy-side and sell-side mandates, business valuations, and complex corporate restructurings.',
+      'Provides expert guidance on mergers, acquisitions, divestitures, due diligence, valuation, and deal structuring to maximize value and mitigate risks in business transactions.',
     icon: 'ArrowLeftRight',
     color: '#08B39C',
     overview:
@@ -169,7 +170,7 @@ export const SERVICES = [
     id: 'compliance-regulatory',
     title: 'Compliance & Regulatory Advisory',
     shortDesc:
-      'Ongoing BSE/NSE, RBI, and ROC compliance management ensuring listed companies remain audit-ready and penalty-free.',
+      'Ensures adherence to statutory laws, regulatory filings, and governance standards like Companies Act 2013 to mitigate risks and avoid penalties.',
     icon: 'Shield',
     color: '#2848B8',
     overview:
@@ -195,142 +196,121 @@ export const SERVICES = [
 
 export const LEADERSHIP = [
   {
-    id: 'manoj-sharma',
-    name: 'Manoj Kumar Sharma',
+    id: 'manoj-agrawal',
+    name: 'Manoj Agrawal',
     designation: 'Managing Director & CEO',
     shortBio:
-      'A seasoned capital markets professional with over 20 years of experience spanning investment banking, equity markets, and regulatory advisory.',
+      'A luminary in finance and law, with over two decades of mastery in equity markets, IPO advisory, and NBFC leadership.',
     fullBio:
-      'Manoj Kumar Sharma is the founder and driving force behind Chiranjiv Capital Services Limited. With over two decades of experience in India\'s capital markets, he has personally managed over 30 IPO transactions and advised on M&A deals aggregating thousands of crores. His deep relationships with institutional investors, regulators, and promoter communities make him the go-to advisor for businesses navigating their capital market journeys. Manoj holds a Post Graduate Diploma in Management with specialization in Finance.',
-    expertise: ['IPO Management', 'Capital Market Strategy', 'Regulatory Relations', 'Investment Banking'],
+      'Manoj Agrawal, a luminary in finance and law, weaves over two decades of mastery in equity markets, IPO advisory, NBFC leadership, and SME consulting. With LLB, LLM, and IIT credentials, he orchestrates mergers, compliance, and transformative growth with visionary precision. His multidisciplinary approach and strong leadership guide Chiranjiv Capital\'s strategic vision.',
+    expertise: ['Equity Markets', 'IPO Advisory', 'NBFC Leadership', 'SME Consulting', 'Mergers & Acquisitions'],
     experience: '20+ Years',
-    education: 'PGDM – Finance | B.Com (Hons)',
-    initials: 'MKS',
-    color: '#112E63',
-    photo: '/team/manoj.jpeg',
-  },
-  {
-    id: 'priya-agarwal',
-    name: 'Priya Agarwal',
-    designation: 'Director – Transaction Advisory',
-    shortBio:
-      'A corporate finance specialist with expertise in M&A, private equity, and complex transaction structuring across multiple sectors.',
-    fullBio:
-      'Priya Agarwal leads the Transaction Advisory practice at Chiranjiv Capital. She brings deep expertise in mergers and acquisitions, private equity transactions, and buy-side advisory. Before joining Chiranjiv Capital, she worked with leading investment banks and advisory firms in Mumbai and Jaipur, advising on cross-border and domestic transactions. Priya holds a Chartered Accountancy qualification and an MBA from a premier institution.',
-    expertise: ['M&A Advisory', 'Private Equity', 'Valuation', 'Deal Structuring'],
-    experience: '15+ Years',
-    education: 'CA | MBA – Finance',
-    initials: 'PA',
-    color: '#08B39C',
-    photo: '/team/priya.jpeg',
-  },
-  {
-    id: 'rajesh-gupta',
-    name: 'Rajesh Gupta',
-    designation: 'Director – Capital Markets',
-    shortBio:
-      'An equity capital markets veteran with extensive experience in debt and equity issuances for listed companies across India.',
-    fullBio:
-      'Rajesh Gupta oversees all capital market service lines at Chiranjiv Capital, including NCD issuances, equity preferential allotments, and open offers. He has over 15 years of experience working at the intersection of corporate finance and capital markets. Rajesh\'s relationships with institutional investors, banks, and NBFCs have been instrumental in successfully placing debt and equity instruments for the firm\'s listed corporate clients.',
-    expertise: ['Equity Capital Markets', 'Debt Issuance', 'Investor Relations', 'Listed Company Advisory'],
-    experience: '15+ Years',
-    education: 'CFA | B.E. + MBA',
-    initials: 'RG',
-    color: '#2848B8',
-    photo: '/team/rajesh.jpeg',
-  },
-  {
-    id: 'anita-joshi',
-    name: 'Anita Joshi',
-    designation: 'Head – Compliance & Regulatory',
-    shortBio:
-      'A compliance and governance expert with deep knowledge of capital market regulatory frameworks and the Companies Act.',
-    fullBio:
-      'Anita Joshi heads the Compliance and Regulatory Advisory practice at Chiranjiv Capital. A Company Secretary by training with additional qualifications in law, she has advised over 100 listed and unlisted companies on governance, statutory compliance, and regulatory filings. Her meticulous approach and comprehensive knowledge of capital market regulations have helped clients maintain impeccable compliance records. Anita is a fellow member of the Institute of Company Secretaries of India.',
-    expertise: ['Regulatory Compliance', 'Corporate Governance', 'Company Secretarial', 'Regulatory Filings'],
-    experience: '12+ Years',
-    education: 'FCS | LLB',
-    initials: 'AJ',
+    education: 'IIT | LLB | LLM',
+    initials: 'MA',
     color: '#CFA84F',
-    photo: '/team/anita.jpeg',
+    photo: '/team/manoj_agrawal.jpeg',
   },
   {
-    id: 'vikram-singhania',
-    name: 'Vikram Singhania',
-    designation: 'Head – Financial Structuring',
+    id: 'amit-saraogi',
+    name: 'CA Amit Kr. Saraogi',
+    designation: 'Head – Corporate Finance & Strategy',
     shortBio:
-      'A project finance and structured finance specialist with a track record of arranging funding for infrastructure and real estate projects.',
+      'FCA with 25+ years of expertise in finance, taxation, investments, compliance, and corporate growth.',
     fullBio:
-      'Vikram Singhania leads the Project and Financial Structuring practice at Chiranjiv Capital. He brings 12 years of experience in project finance, debt syndication, and structured product design. Vikram has arranged project finance facilities for several large infrastructure, renewable energy, and commercial real estate projects across Rajasthan and other states. He is known for his ability to balance lender requirements with promoter objectives in complex multi-stakeholder financing scenarios.',
-    expertise: ['Project Finance', 'Structured Finance', 'Debt Syndication', 'Infrastructure Financing'],
-    experience: '12+ Years',
-    education: 'CA | PGDM – Finance',
-    initials: 'VS',
+      'CA Amit Kr. Saraogi is an FCA with 25+ years of rich expertise in finance, taxation, investments, compliance, and corporate strategy. He excels in fund management, M&A, RBI-governed NBFC operations, insurance broking, and driving business growth. His extensive career spans advisory roles for prominent corporate houses, implementing robust financial systems and structuring complex investment portfolios.',
+    expertise: ['Fund Management', 'M&A', 'Corporate Finance', 'NBFC Operations', 'Strategic Growth'],
+    experience: '25+ Years',
+    education: 'FCA',
+    initials: 'AS',
+    color: '#08B39C',
+    photo: '/team/amit.jpeg',
+  },
+  {
+    id: 'manish-mittal',
+    name: 'Adv. Manish Mittal',
+    designation: 'Head – Legal & Tax Litigation',
+    shortBio:
+      'Advocate with over 25 years of expertise in direct & indirect taxation, corporate law, and legal advisory.',
+    fullBio:
+      'Adv. Manish Mittal offers over 25 years of expertise in professional services, providing strategic financial and legal advice to firms, MSMEs, and corporate houses. Specializing in direct & indirect taxation, legal issues, and insurance, he is a seasoned tax litigation lawyer who navigates governance complexities and drives compliance and growth.',
+    expertise: ['Tax Litigation', 'Corporate Legal Advisory', 'Governance Complexities', 'Indirect Taxation'],
+    experience: '25+ Years',
+    education: 'Advocate | LLB',
+    initials: 'MM',
+    color: '#2848B8',
+    photo: '/team/manish.jpeg',
+  },
+  {
+    id: 'sumit-bajaj',
+    name: 'CS Sumit Bajaj',
+    designation: 'Head – Capital Markets & Compliance',
+    shortBio:
+      'CS with 10 years of expertise in capital markets, securities laws, corporate governance, and due diligence.',
+    fullBio:
+      'CS Sumit Bajaj brings 10 years of expertise in capital markets, securities laws, corporate governance, and due diligence. He specializes in IPOs, FPOs, listings, migrations, and SEBI compliance. With a deep understanding of corporate regulatory landscapes and merchant banking compliance, he has successfully guided numerous enterprises through complex market transitions and regulatory approvals.',
+    expertise: ['Capital Markets', 'Securities Laws', 'Corporate Governance', 'SEBI Compliance', 'IPOs & FPOs'],
+    experience: '10+ Years',
+    education: 'CS | B.Com',
+    initials: 'SB',
     color: '#112E63',
-    photo: '/team/vikram.jpeg',
+    photo: '/team/sumit.jpeg',
+  },
+  {
+    id: 'aman-gupta',
+    name: 'CA Aman Gupta',
+    designation: 'Head – Financial Modeling & Advisory',
+    shortBio:
+      'A meritorious Chartered Accountant from ICAI specializing in tax litigation, financial modeling, and wealth creation.',
+    fullBio:
+      'CA Aman Gupta, a meritorious Chartered Accountant from ICAI, illuminates the realms of direct/indirect tax litigation, financial modeling, IPO advisory, and wealth creation. At 36, with forensic expertise and a legacy in PSUs and listed firms, he crafts transparent paths to fiscal mastery and strategic triumph.',
+    expertise: ['Financial Modeling', 'Tax Litigation', 'Forensic Audit', 'IPO Advisory', 'Wealth Creation'],
+    experience: '12+ Years',
+    education: 'CA',
+    initials: 'AG',
+    color: '#112E63',
+    photo: '/team/aman.jpeg',
   },
 ];
 
 export const IPO_CLIENTS = [
-  'Mahindra Manulife Mutual Fund',
-  'Patel Engineering Ltd',
-  'Indo National Ltd',
-  'Rajputana Hotels Ltd',
-  'Jaipur Rugs Company Ltd',
-  'Genus Power Infrastructures Ltd',
-  'Rajasthan Patrika Ltd',
-  'Shri Jagdamba Polymers Ltd',
-  'Aarvee Denims & Exports Ltd',
-  'Surana Solar Limited',
-  'Minda Finance Ltd',
-  'Sabka Vishwas Minerals Ltd',
-  'Sriram EPC Limited',
-  'Texmo Pipes & Products Ltd',
-  'Classic Global Finance Ltd',
-  'Subhash Projects & Marketing Ltd',
+  'Reno Polychem Limited',
+  'Krupalu Metals Limited',
+  'Mandeep Auto Industries Limited',
+  'Kalana Ispat Limited',
+  'Healthy Life Agritec Limited',
+  'Gallard Steel Limited',
 ];
 
 export const LISTED_CLIENTS = [
-  'Genus Power Infrastructures Ltd',
-  'Patel Engineering Ltd',
-  'Shri Jagdamba Polymers Ltd',
-  'Aarvee Denims & Exports Ltd',
-  'Rajasthan Patrika Media Ltd',
-  'Surana Solar Limited',
-  'Minda Industries Ltd',
-  'Texmo Pipes & Products Ltd',
-  'Indo National Ltd',
-  'Classic Global Finance Ltd',
-  'Subhash Projects & Marketing Ltd',
-  'Sriram EPC Limited',
-  'Genus Prime Infra Ltd',
-  'Mangalam Cement Ltd',
-  'Bank of Baroda (Rajasthan Operations)',
-  'Vardhman Textiles Ltd',
-  'Bharat Wire Ropes Ltd',
-  'DCM Shriram Ltd',
+  'Credent Global Finance Limited',
+  'RLF Limited',
+  'United Leasing & Industries Limited',
+  'Royal Sense Limited',
+  'Boston Commerce Limited (Formerly known as Boston Bio Systems Limited)',
+  'KCK Industries Limited',
+  'Flywings Simulator Training Centre Limited',
 ];
 
 export const WHY_CHOOSE = [
   {
-    icon: 'Award',
-    title: 'Licensed Merchant Banker',
-    desc: 'Fully licensed and regulated under the Merchant Bankers Regulations, 1992, ensuring the highest standards of professional practice.',
-  },
-  {
     icon: 'Users',
     title: 'Experienced Leadership',
-    desc: 'Our leadership team brings a combined 75+ years of capital markets expertise across IPOs, M&A, compliance, and structured finance.',
+    desc: 'Team of seasoned professionals with expertise in capital markets and corporate finance.',
+  },
+  {
+    icon: 'Shield',
+    title: 'Regulatory Expertise',
+    desc: 'Strong understanding of financial regulations and compliance frameworks.',
   },
   {
     icon: 'Target',
     title: 'Client-Centric Approach',
-    desc: 'We build long-term relationships, not transactional engagements. Every mandate receives senior leadership attention from start to finish.',
+    desc: 'Tailored solutions based on specific business needs.',
   },
   {
     icon: 'Layers',
-    title: 'End-to-End Solutions',
-    desc: 'From capital raising to compliance management, we are a single window for all your capital market needs—eliminating coordination risk.',
+    title: 'End-to-End Solution',
+    desc: 'Comprehensive support from planning to execution.',
   },
 ];
 
@@ -345,9 +325,9 @@ export const PROCESS_STEPS = [
 
 export const ABOUT_MILESTONES = [
   { year: '2019', title: 'Founded', desc: 'Chiranjiv Capital incorporated as a Merchant Banker.' },
-  { year: '2020', title: 'First IPO', desc: 'Successfully managed first SME IPO on BSE, raising ₹45 Cr for a Jaipur-based manufacturer.' },
+  { year: '2020', title: 'First IPO', desc: 'Successfully managed first SME IPO on BSE, raising ₹45 Cr for a leading manufacturer.' },
   { year: '2021', title: 'Team Expansion', desc: 'Added Transaction Advisory and Compliance verticals with senior talent.' },
-  { year: '2022', title: 'Milestone 25 IPOs', desc: 'Completed 25th IPO mandate, establishing leadership in Rajasthan capital markets.' },
+  { year: '2022', title: 'Milestone 25 IPOs', desc: 'Completed 25th IPO mandate, establishing strong credentials in SME capital markets.' },
   { year: '2023', title: 'Structured Finance', desc: 'Launched Project Finance division, arranging ₹500 Cr in infrastructure funding.' },
   { year: '2024', title: 'Pan-India Presence', desc: 'Extended client base to 200+ listed companies across 15 states.' },
 ];
