@@ -176,15 +176,10 @@ function AboutSection() {
             </h2>
             <div className={styles.dividerLine} />
             <p className={styles.aboutText}>
-              Chiranjiv Capital Services Limited is a Merchant Banker headquartered in Connaught Place, New Delhi.
-              We provide expert services in IPO fund raising, M&A due diligence, capital market services,
-              project & financial structuring, transaction advisory, and compliance & regulatory advisory.
+              Chiranjiv Capital Services Limited is a Category I Merchant Banker headquartered in Connaught Place, New Delhi. We deliver high-impact solutions across corporate finance, transaction advisory, compliance, and strategic growth.
             </p>
             <p className={styles.aboutText}>
-              Our experienced team of CAs, CSs, and advocates brings deep domain knowledge to deliver
-              seamless, high-value solutions. With a proven track record, we guide clients through
-              complex transactions, ensuring regulatory compliance and sustainable growth in India’s
-              competitive landscape for success.
+              Our multidisciplinary team of CAs, CSs, and legal experts helps businesses navigate complex capital market challenges with clarity, precision, and compliance.
             </p>
             <div className={styles.aboutHighlights}>
               {[

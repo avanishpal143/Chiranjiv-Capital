@@ -408,9 +408,10 @@
 .leadershipSection { background: var(--bg-section); }
 
 .leaderGrid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: var(--space-5);
+  display: flex;
+  justify-content: center;
+  gap: var(--space-6);
+  flex-wrap: wrap;
 }
 
 .leaderCard {
@@ -420,8 +421,12 @@
   padding: var(--space-6);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: var(--space-3);
   transition: all 0.25s ease;
+  max-width: 320px;
+  width: 100%;
 }
 
 .leaderCard:hover {
@@ -435,6 +440,7 @@
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
+  margin: 0 auto;
 }
 
 .leaderPhoto {
@@ -486,7 +492,7 @@
   overflow: hidden;
 }
 
-.leaderTags { display: flex; flex-wrap: wrap; gap: var(--space-1); }
+.leaderTags { display: flex; flex-wrap: wrap; gap: var(--space-1); justify-content: center; }
 
 .leaderTag {
   font-size: 0.65rem;
@@ -500,6 +506,7 @@
 .leaderLink {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 4px;
   font-size: var(--text-xs);
   font-weight: 600;

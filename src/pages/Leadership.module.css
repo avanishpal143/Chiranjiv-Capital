@@ -36,17 +36,18 @@
 .profilesSection { background: var(--bg-section); }
 .sectionHead { text-align: center; display: flex; flex-direction: column; align-items: center; gap: var(--space-4); margin-bottom: var(--space-12); }
 .profilesGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
+.profilesList { display: flex; flex-direction: column; gap: var(--space-6); max-width: 960px; margin: 0 auto; }
 .profileCard {
   background: white; border: 1px solid var(--border-light); border-radius: var(--radius-2xl);
-  padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-5);
+  padding: var(--space-8); display: flex; gap: var(--space-8);
   transition: all 0.25s ease;
 }
-.profileCard:hover { box-shadow: var(--shadow-xl); transform: translateY(-4px); }
-.profileHeader { display: flex; gap: var(--space-5); align-items: center; }
+.profileCard:hover { box-shadow: var(--shadow-xl); transform: translateY(-2px); }
+.profileHeader { display: flex; gap: var(--space-5); align-items: center; justify-content: space-between; width: 100%; }
 
 /* Photo styles */
 .profileAvatarWrap {
-  width: 80px; height: 80px; border-radius: 50%;
+  width: 140px; height: 140px; border-radius: 50%;
   overflow: hidden; flex-shrink: 0;
   border: 3px solid var(--border-light);
   box-shadow: var(--shadow-md);
@@ -56,20 +57,26 @@
   object-fit: cover; object-position: center top;
   image-rendering: auto;
 }
-.profileAvatar { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.profileInitials { font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 800; color: white; }
+.profileAvatar { width: 140px; height: 140px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.profileInitials { font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; color: white; }
 
+.profileContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
 .profileMeta { display: flex; flex-direction: column; gap: var(--space-1); }
 .profileName { font-size: var(--text-xl); font-weight: 800; color: var(--text-dark); }
-.profileDesig { font-size: var(--text-sm); color: var(--text-muted); }
+.profileDesig { font-size: var(--text-sm); color: var(--text-muted); font-weight: 600; }
 .profileBadge {
   display: inline-flex; align-items: center; gap: 4px;
   font-size: var(--text-xs); font-weight: 600;
   background: rgba(17,46,99,0.06); color: var(--corporate-navy);
-  padding: 0.25rem 0.625rem; border-radius: var(--radius-full); margin-top: 4px;
+  padding: 0.25rem 0.625rem; border-radius: var(--radius-full);
 }
 .profileDivider { height: 1px; background: var(--border-light); }
-.profileBio { font-size: var(--text-sm); color: var(--text-body); line-height: 1.75; }
+.profileBio { font-size: var(--text-sm); color: var(--text-body); line-height: 1.75; text-align: justify; }
 .profileSection { display: flex; flex-direction: column; gap: var(--space-2); }
 .profileSubTitle { font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
 .profileTags { display: flex; flex-wrap: wrap; gap: var(--space-2); }
@@ -81,12 +88,39 @@
 }
 .profileEdu { font-size: var(--text-sm); color: var(--text-muted); font-weight: 500; }
 
+.sectionDividerLine {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-medium), transparent);
+  margin: var(--space-16) auto;
+  max-width: 800px;
+}
+
 /* CTA */
 .ctaSection { background: linear-gradient(135deg, #112E63, #0B1F47); padding: var(--space-20) 0; }
 .ctaInner { text-align: center; display: flex; flex-direction: column; align-items: center; gap: var(--space-5); }
 .ctaTitle { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 800; color: white; letter-spacing: -0.025em; }
 .ctaDesc { color: rgba(255,255,255,0.7); font-size: var(--text-lg); max-width: 500px; line-height: 1.7; }
 
-@media (max-width: 900px) {
-  .profilesGrid { grid-template-columns: 1fr; }
+@media (max-width: 768px) {
+  .profileCard {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-5);
+    padding: var(--space-6);
+  }
+  .profileHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-3);
+  }
+  .profileContent {
+    align-items: center;
+    text-align: center;
+  }
+  .profileTags {
+    justify-content: center;
+  }
+  .profileBio {
+    text-align: center;
+  }
 }

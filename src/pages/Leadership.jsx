@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import AnimatedSection, { StaggerContainer } from '../components/AnimatedSection';
 import { Icon } from '../components/Icons';
-import { LEADERSHIP } from '../data/content';
+import { LEADERSHIP, KMP } from '../data/content';
 import styles from './Leadership.module.css';
 
 function PageHero() {
@@ -34,22 +34,10 @@ function TeamMessage() {
           <h2 className={styles.messageTitle}>Our Commitment to Your Success</h2>
           <div className={styles.messageDivider}/>
           <blockquote className={styles.messageQuote}>
-            "At Chiranjiv Capital, we believe that every business deserves access to
-            world-class capital market expertise — regardless of its size or location.
-            We founded this firm to be the trusted advisor that we ourselves would have
-            wanted when navigating the complexities of India's financial markets."
+            "At Chiranjiv Capital, we provide world-class capital market expertise with a personal, boutique approach. We walk alongside you at every step of your growth journey."
           </blockquote>
           <p className={styles.messageText}>
-            Our approach is straightforward: we invest deeply in understanding your business,
-            your ambitions, and the challenges you face. Only then do we recommend solutions.
-            We don't believe in one-size-fits-all advisory. Every mandate we take is
-            approached with fresh eyes, senior commitment, and the full weight of our
-            combined experience.
-          </p>
-          <p className={styles.messageText}>
-            Our registration as a Merchant Banker is not just a regulatory requirement — it is a
-            promise to our clients and to the market that we uphold the highest standards of
-            professional conduct, transparency, and client confidentiality.
+            We invest deeply in understanding your business goals and compliance needs. We do not believe in one-size-fits-all advisory; every mandate is executed with senior commitment and institutional precision.
           </p>
           <p className={styles.messageSig}>— The Chiranjiv Capital Team</p>
         </AnimatedSection>
@@ -62,52 +50,124 @@ function LeaderProfiles() {
   return (
     <section className={`section ${styles.profilesSection}`}>
       <div className="container">
+        
+        {/* Our Team Section */}
         <AnimatedSection className={styles.sectionHead}>
-          <span className="eyebrow">Our People</span>
-          <h2 className="section-title">Meet the Team</h2>
+          <span className="eyebrow">Our Team</span>
+          <h2 className="section-title">Board of Directors</h2>
           <p className="section-subtitle">
-            Each member of our team is a specialist in their domain,
-            bringing focused expertise to every client engagement.
+            Senior leadership driving our strategic vision and capital market transactions.
           </p>
         </AnimatedSection>
-        <div className={styles.profilesGrid}>
+
+        <div className={styles.profilesList}>
           {LEADERSHIP.map((leader, i) => (
             <AnimatedSection key={leader.id} delay={i * 0.08} className={styles.profileCard}>
-              <div className={styles.profileHeader}>
-                <div className={styles.profileAvatarWrap}>
-                  {leader.photo ? (
-                    <img src={leader.photo} alt={leader.name} className={styles.profilePhoto} />
-                  ) : (
-                    <div className={styles.profileAvatar} style={{background:`linear-gradient(135deg,${leader.color},${leader.color}cc)`}}>
-                      <span className={styles.profileInitials}>{leader.initials}</span>
+              <div className={styles.profileAvatarWrap}>
+                {leader.photo ? (
+                  <img src={leader.photo} alt={leader.name} className={styles.profilePhoto} />
+                ) : (
+                  <div className={styles.profileAvatar} style={{background:`linear-gradient(135deg,${leader.color},${leader.color}cc)`}}>
+                    <span className={styles.profileInitials}>{leader.initials}</span>
+                  </div>
+                )}
+              </div>
+              <div className={styles.profileContent}>
+                <div className={styles.profileHeader}>
+                  <div className={styles.profileMeta}>
+                    <h3 className={styles.profileName}>{leader.name}</h3>
+                    <p className={styles.profileDesig}>{leader.designation}</p>
+                  </div>
+                  {leader.experience && (
+                    <div className={styles.profileBadge}>
+                      <Icon name="Award" size={12}/>{leader.experience}
                     </div>
                   )}
                 </div>
-                <div className={styles.profileMeta}>
-                  <h3 className={styles.profileName}>{leader.name}</h3>
-                  <p className={styles.profileDesig}>{leader.designation}</p>
-                  <div className={styles.profileBadge}>
-                    <Icon name="Award" size={12}/>{leader.experience}
+                {leader.fullBio && <p className={styles.profileBio}>{leader.fullBio}</p>}
+                
+                {leader.expertise && leader.expertise.length > 0 && (
+                  <div className={styles.profileSection}>
+                    <h4 className={styles.profileSubTitle}>Areas of Expertise</h4>
+                    <div className={styles.profileTags}>
+                      {leader.expertise.map(e => (
+                        <span key={e} className={styles.profileTag}>{e}</span>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div className={styles.profileDivider}/>
-              <p className={styles.profileBio}>{leader.fullBio}</p>
-              <div className={styles.profileSection}>
-                <h4 className={styles.profileSubTitle}>Areas of Expertise</h4>
-                <div className={styles.profileTags}>
-                  {leader.expertise.map(e => (
-                    <span key={e} className={styles.profileTag}>{e}</span>
-                  ))}
-                </div>
-              </div>
-              <div className={styles.profileSection}>
-                <h4 className={styles.profileSubTitle}>Education</h4>
-                <p className={styles.profileEdu}>{leader.education}</p>
+                )}
+
+                {leader.education && (
+                  <div className={styles.profileSection}>
+                    <h4 className={styles.profileSubTitle}>Education</h4>
+                    <p className={styles.profileEdu}>{leader.education}</p>
+                  </div>
+                )}
               </div>
             </AnimatedSection>
           ))}
         </div>
+
+        {/* Section Divider */}
+        <div className={styles.sectionDividerLine} />
+
+        {/* KMP Section */}
+        <AnimatedSection className={styles.sectionHead} style={{ marginTop: 'var(--space-16)' }}>
+          <span className="eyebrow">KMP</span>
+          <h2 className="section-title">Key Managerial Personnel</h2>
+          <p className="section-subtitle">
+            Qualified professionals ensuring execution and regulatory compliance across all mandates.
+          </p>
+        </AnimatedSection>
+
+        <div className={styles.profilesList}>
+          {KMP.map((kmp, i) => (
+            <AnimatedSection key={kmp.id} delay={i * 0.08} className={styles.profileCard}>
+              <div className={styles.profileAvatarWrap}>
+                {kmp.photo ? (
+                  <img src={kmp.photo} alt={kmp.name} className={styles.profilePhoto} />
+                ) : (
+                  <div className={styles.profileAvatar} style={{background:`linear-gradient(135deg,${kmp.color},${kmp.color}cc)`}}>
+                    <span className={styles.profileInitials}>{kmp.initials}</span>
+                  </div>
+                )}
+              </div>
+              <div className={styles.profileContent}>
+                <div className={styles.profileHeader}>
+                  <div className={styles.profileMeta}>
+                    <h3 className={styles.profileName}>{kmp.name}</h3>
+                    <p className={styles.profileDesig}>{kmp.designation}</p>
+                  </div>
+                  {kmp.experience && (
+                    <div className={styles.profileBadge}>
+                      <Icon name="Award" size={12}/>{kmp.experience}
+                    </div>
+                  )}
+                </div>
+                {kmp.fullBio && <p className={styles.profileBio}>{kmp.fullBio}</p>}
+                
+                {kmp.expertise && kmp.expertise.length > 0 && (
+                  <div className={styles.profileSection}>
+                    <h4 className={styles.profileSubTitle}>Areas of Expertise</h4>
+                    <div className={styles.profileTags}>
+                      {kmp.expertise.map(e => (
+                        <span key={e} className={styles.profileTag}>{e}</span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {kmp.education && (
+                  <div className={styles.profileSection}>
+                    <h4 className={styles.profileSubTitle}>Education</h4>
+                    <p className={styles.profileEdu}>{kmp.education}</p>
+                  </div>
+                )}
+              </div>
+            </AnimatedSection>
+          ))}
+        </div>
+
       </div>
     </section>
   );

@@ -38,21 +38,10 @@ function CompanyStory() {
             <h2 className="section-title" style={{margin:'1rem 0'}}>From Vision to India's Capital Markets</h2>
             <div className={styles.divider}/>
             <p style={{color:'var(--text-body)',lineHeight:1.75,marginBottom:'1rem'}}>
-              Chiranjiv Capital was founded in 2019 with a singular vision: to create a merchant
-              banking firm that combines institutional-grade expertise with the personal attention
-              of a boutique advisory practice. Headquartered in Connaught Place, New Delhi, we serve clients
-              across India from our base in the heart of the national capital.
+              Chiranjiv Capital Services Limited is a Category I Merchant Banker. Founded in 2019 and headquartered in Connaught Place, New Delhi, we blend institutional-grade expertise with boutique personal attention.
             </p>
             <p style={{color:'var(--text-body)',lineHeight:1.75,marginBottom:'1rem'}}>
-              We provide expert services in IPO fund raising, M&A due diligence, capital market services,
-              project & financial structuring, transaction advisory, and compliance & regulatory advisory.
-              Our experienced team of CAs, CSs, and advocates brings deep domain knowledge to deliver
-              seamless, high-value solutions.
-            </p>
-            <p style={{color:'var(--text-body)',lineHeight:1.75,marginBottom:'1rem'}}>
-              With a proven track record, we guide clients through complex transactions, ensuring
-              regulatory compliance and sustainable growth in India’s competitive landscape for success.
-              Our registration under the Merchant Bankers Regulations, 1992 underpins every service we offer.
+              We specialize in IPO fundraising, transaction advisory, M&A due diligence, and regulatory compliance. Our team of CAs, CSs, and legal advisors helps businesses grow and transition seamlessly in India's competitive landscape.
             </p>
             <div className={styles.storyBadges}>
               <div className={styles.storyBadge}>
