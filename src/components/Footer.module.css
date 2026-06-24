@@ -68,8 +68,8 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1.2fr 1fr;
-  gap: var(--space-12);
+  grid-template-columns: 2fr 1fr 1fr 1.3fr 1fr;
+  gap: var(--space-8);
 }
 
 /* Brand Column */

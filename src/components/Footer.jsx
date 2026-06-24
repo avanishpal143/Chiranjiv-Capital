@@ -20,6 +20,13 @@ const FOOTER_LINKS = {
     { label: 'Financial Structuring', to: '/services#project-financial-structuring' },
     { label: 'Compliance Advisory', to: '/services#compliance-regulatory' },
   ],
+  'Regulatory & Policies': [
+    { label: 'Mandate Acceptance Criteria', to: '/mandate-acceptance-criteria' },
+    { label: 'Investor Grievance Policy', to: '/investor-grievance-policy' },
+    { label: 'Code of Ethics', to: '/code-of-ethics' },
+    { label: 'Data Backup Policy', to: '/data-backup-policy' },
+    { label: 'Employee Investment Policy', to: '/employee-investment-policy' },
+  ],
   'Quick Links': [
     { label: 'Book Consultation', to: '/contact' },
     { label: 'Our Process', to: '/#process' },

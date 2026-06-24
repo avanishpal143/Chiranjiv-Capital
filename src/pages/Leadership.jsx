@@ -123,15 +123,6 @@ function LeaderProfiles() {
         <div className={styles.profilesList}>
           {KMP.map((kmp, i) => (
             <AnimatedSection key={kmp.id} delay={i * 0.08} className={styles.profileCard}>
-              <div className={styles.profileAvatarWrap}>
-                {kmp.photo ? (
-                  <img src={kmp.photo} alt={kmp.name} className={styles.profilePhoto} />
-                ) : (
-                  <div className={styles.profileAvatar} style={{background:`linear-gradient(135deg,${kmp.color},${kmp.color}cc)`}}>
-                    <span className={styles.profileInitials}>{kmp.initials}</span>
-                  </div>
-                )}
-              </div>
               <div className={styles.profileContent}>
                 <div className={styles.profileHeader}>
                   <div className={styles.profileMeta}>

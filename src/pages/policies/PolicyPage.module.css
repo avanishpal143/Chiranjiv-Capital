@@ -1,0 +1,196 @@
+.policyPage {
+  background: var(--bg-off-white);
+  min-height: 100vh;
+}
+
+.hero {
+  padding: calc(var(--header-height) + var(--space-12)) 0 var(--space-12);
+  background: linear-gradient(135deg, #0B1F47 0%, #112E63 100%);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.heroTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  color: white;
+  margin-bottom: var(--space-4);
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: var(--text-sm);
+  color: var(--premium-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.contentSection {
+  padding: var(--space-16) 0;
+}
+
+.paperCard {
+  background: white;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-12) var(--space-16);
+  box-shadow: var(--shadow-xl);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.docTitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  color: var(--corporate-navy);
+  margin-bottom: var(--space-6);
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: var(--space-4);
+  text-transform: uppercase;
+}
+
+.introText {
+  font-size: var(--text-base);
+  color: var(--text-dark);
+  line-height: 1.8;
+  margin-bottom: var(--space-6);
+  text-align: justify;
+}
+
+.section {
+  margin-top: var(--space-8);
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--space-4);
+  border-left: 4px solid var(--premium-gold);
+  padding-left: var(--space-3);
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: var(--text-sm);
+  color: var(--text-body);
+  line-height: 1.75;
+  margin-bottom: var(--space-4);
+  text-align: justify;
+}
+
+.list {
+  margin-bottom: var(--space-6);
+  padding-left: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.listItem {
+  font-size: var(--text-sm);
+  color: var(--text-body);
+  line-height: 1.7;
+  position: relative;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  margin: var(--space-6) 0;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.th {
+  background: var(--corporate-navy);
+  color: white;
+  font-weight: 700;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border-light);
+  font-size: var(--text-sm);
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+.tr:nth-child(even) {
+  background: var(--bg-section);
+}
+
+.signatureArea {
+  margin-top: var(--space-12);
+  border-top: 1px dashed var(--border-medium);
+  padding-top: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.sigCompany {
+  font-weight: 700;
+  color: var(--corporate-navy);
+  margin-bottom: var(--space-8);
+  font-size: var(--text-sm);
+}
+
+.sigName {
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: var(--text-sm);
+}
+
+.sigTitle {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+.contactBox {
+  background: var(--bg-section);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-6);
+  margin: var(--space-6) 0;
+}
+
+.contactRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.contactCol {
+  font-size: var(--text-sm);
+  color: var(--text-dark);
+}
+
+.contactLabel {
+  font-weight: 700;
+  color: var(--corporate-navy);
+}
+
+@media (max-width: 768px) {
+  .paperCard {
+    padding: var(--space-6) var(--space-6);
+  }
+  .contactRow {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+}

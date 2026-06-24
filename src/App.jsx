@@ -10,6 +10,11 @@ import Services from './pages/Services';
 import Leadership from './pages/Leadership';
 import Clientele from './pages/Clientele';
 import Contact from './pages/Contact';
+import MandateAcceptance from './pages/policies/MandateAcceptance';
+import InvestorGrievance from './pages/policies/InvestorGrievance';
+import CodeOfEthics from './pages/policies/CodeOfEthics';
+import DataBackupPolicy from './pages/policies/DataBackupPolicy';
+import EmployeeInvestmentPolicy from './pages/policies/EmployeeInvestmentPolicy';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -37,6 +42,11 @@ function AnimatedRoutes() {
           <Route path="/leadership" element={<Leadership />} />
           <Route path="/clientele" element={<Clientele />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/mandate-acceptance-criteria" element={<MandateAcceptance />} />
+          <Route path="/investor-grievance-policy" element={<InvestorGrievance />} />
+          <Route path="/code-of-ethics" element={<CodeOfEthics />} />
+          <Route path="/data-backup-policy" element={<DataBackupPolicy />} />
+          <Route path="/employee-investment-policy" element={<EmployeeInvestmentPolicy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </motion.div>
